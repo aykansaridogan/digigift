@@ -227,7 +227,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Color _hexToColor(String hexCode) {
-    if (hexCode == null || hexCode.isEmpty) {
+    if (hexCode.isEmpty) {
       return Colors.grey;
     }
     return Color(int.parse(hexCode.substring(1, 7), radix: 16) + 0xFF000000);
