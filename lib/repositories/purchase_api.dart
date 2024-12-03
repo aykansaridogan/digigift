@@ -1,7 +1,5 @@
-import 'dart:io';
 
 import 'package:flutter/services.dart';
-import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 
 String google_api_key = "goog_FIOSYCinbeNZasEyQdtHQXXkZZw";
@@ -28,7 +26,7 @@ class PurchaseApi {
       final current = offerings.current;
 
       return current == null ? [] : [current];
-    } on PlatformException catch (e) {
+    } on PlatformException {
       return [];
     }
   }

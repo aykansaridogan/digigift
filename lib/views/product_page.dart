@@ -233,7 +233,7 @@ class _ProductPageState extends State<ProductPage> {
                                 borderSide: BorderSide(color: Colors.black, width: 2.0),
                               ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.black!, width: 1.0),
+                                borderSide: BorderSide(color: Colors.black, width: 1.0),
                               ),
                             ),
                             onChanged: (value) {

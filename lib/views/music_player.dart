@@ -122,8 +122,10 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
         throw Exception('Bu platform desteklenmiyor');
       }
 
-      final mp3FilePath = '${directory!.path}/song1.mp3';
-      final zipFilePath = '${directory.path}/song1.zip';
+      final mp3FilePath = '${directory?.path}/song1.mp3';
+      final zipFilePath = '${directory?.path}/song1.zip';
+
+      
 
       // MP3 dosyasını indir
       await dio.download(widget.musicPath, mp3FilePath);
