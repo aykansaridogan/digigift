@@ -1,0 +1,50 @@
+name: digitalgift
+description: "DigitalGift"
+publish_to: "none"  # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+2
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  device_preview: ^1.2.0
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  audioplayers: ^6.1.0
+  dio: ^5.6.0
+  video_player: ^2.9.1
+  path_provider: ^2.0.12
+  url_launcher: ^6.0.0
+  html: ^0.15.4
+  share_plus: ^10.1.2
+  archive: ^3.6.1
+  cross_file: ^0.3.3
+  permission_handler: ^11.3.1
+  cupertino_icons: ^1.0.8
+  purchases_flutter: ^8.2.2
+  intl_phone_field: ^3.2.0
+  in_app_purchase: ^3.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+
+flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - assets/Sarkiyapp.png
+    - assets/music/song1.mp3
+    - assets/music/song2.mp3
+    - assets/music/song3.mp3
+  uses-material-design: true
+
+# Add this section for the flutter_launcher_icons configuration
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/digigift.png"  # Path to your custom app icon image
+
